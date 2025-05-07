@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Website</title>
+  <link rel="stylesheet" href="./webstyle.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+</head>
+
+<body>
+  <nav class="navbar fixed-top navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#home">Poppy's Greenhouse</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown"
+        aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#plants" id="navbarDarkDropdownMenuLink" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              Plants
+            </a>
+            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+              <li><a class="dropdown-item" href="#ferns">Ferns</a></li>
+              <li><a class="dropdown-item" href="#moss">Mosses</a></li>
+              <li><a class="dropdown-item" href="#conifers">Conifers</a></li>
+              <li>
+                <a class="dropdown-item" href="#flowering">Flowering</a>
+              </li>
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+              <li><a class="dropdown-item" href="#cart">Check-out</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="home" id="home">
+    <p>
+    <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3" aria-label="Slide 4"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="5000">
+          <img src="fern.jpeg" class="d-block w-100" alt="ferns">
+          <div class="carousel-caption d-none d-md-block">
+            <h5><a href="#ferns">Ferns</a></h5>
+            <p>Ferns have been around for at least 360 million years, with fossil evidence indicating their presence
+              during the time of dinosaurs. They are often used as biofertilizers, ornamental plants, and for
+              remediating contaminated soil. </p>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="5000">
+          <img src="moss.jpeg" class="d-block w-100" alt="mosses">
+          <div class="carousel-caption d-none d-md-block">
+            <h5><a href="#moss">Mosses</a></h5>
+            <p>They were the first plants to successfully colonize solid ground, dating back 450 million years. These
+              useful plants have been used as bandages during World War I, and some species are even bioluminescent.</p>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="5000">
+          <img src="conifer.jpeg" class="d-block w-100" alt="conifers">
+          <div class="carousel-caption d-none d-md-block">
+            <h5><a href="#conifers">Conifers</a></h5>
+            <p>Conifers are the oldest seed plants, evolving about 300 million years ago. Conifers are crucial for
+              timber production and provide shelter for wildlife. Most conifers are both male and female, producing both
+              male pollen and female cones.</p>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="5000">
+          <img src="flower.jpeg" class="d-block w-100" alt="flowers">
+          <div class="carousel-caption d-none d-md-block">
+            <h5><a href="#flowering">Flowers</a></h5>
+            <p>There are over 300,000 species of flowering plants on Earth. Flowering plants are the primary source of
+              food for humans and animals, providing essential medicines and other resources.</p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    </p>
+  </div>
+  <div class="about" id="about">
+    <h1>About</h1>
+    <p>
+      Welcome to our website! We are dedicated to providing you with the best
+      service possible. Our team is committed to ensuring your satisfaction.
+    </p>
+  </div>
+  <div class="plants" id="plants">
+    <h1>Plants</h1>
+    <div>
+      <div class="container mt-5" id="ferns">
+        <h2>Ferns</h2>
+        <p>Ferns are a group of about 12,000 species of plants.</p>
+        <div id="ferns-products" class="product-gallery"></div>
+      </div>
+      <div class="container mt-5" id="moss">
+        <h2>Mosses</h2>
+        <p>Mosses are small flowerless plants.</p>
+        <div id="moss-products" class="product-gallery"></div>
+      </div>
+      <div class="container mt-5" id="conifers">
+        <h2>Conifers</h2>
+        <p>Conifers are trees that produce cones.</p>
+        <div id="conifers-products" class="product-gallery"></div>
+      </div>
+      <div class="container mt-5" id="flowering">
+        <h2>Flowering Plants</h2>
+        <p>Flowering plants are the most diverse group of land plants.</p>
+        <div id="flowering-products" class="product-gallery"></div>
+      </div>
+    </div>
+  </div>
+  <div class="container mt-5" id="cart">
+    <h2>Shopping Cart</h2>
+    <ul id="cart-items" class="list-group mb-3"></ul>
+    <h4>Total: $<span id="cart-total">0</span></h4>
+    <form id="checkout-form" class="mt-3">
+      <div class="mb-3">
+        <label for="address" class="form-label">Shipping Address</label>
+        <textarea class="form-control" id="address" required></textarea>
+      </div>
+      <button type="submit" class="btn btn-success">Checkout</button>
+    </form>
+  </div>
+  <br>
+  <div class="contact" id="contact">
+    <h1>Contact</h1>
+    <p>
+      If you have any questions or concerns, please feel free to reach out to
+      us. We are here to help!
+    </p>
+    <p>Email: <a href="mailto:poppgh@gmail.com">poppygh@gmail.com</a></p>
+    <p>Phone: <a href="tel:+919308980859">+91 9308980859</a></p>
+    <p>
+    <address>
+      Address:<br>
+      560, 3rd Floor, 9th A Main,<br>
+      Indiranagar, behind Coffee Day,<br>
+      Bengaluru, Karnataka 560038, India
+    </address>
+    </p>
+  </div>
+  <script>
+    const cart = [];
+
+    function addToCart(item) {
+      cart.push(item);
+      renderCart();
+    }
+
+    function renderCart() {
+      const cartList = document.getElementById('cart-items');
+      const cartTotal = document.getElementById('cart-total');
+      cartList.innerHTML = '';
+      let total = 0;
+      cart.forEach(product => {
+        const li = document.createElement('li');
+        li.className = 'list-group-item';
+        li.textContent = `${product.name} - ${product.price}`;
+        cartList.appendChild(li);
+        total += parseFloat(product.price.substring(1));
+      });
+      cartTotal.textContent = total.toFixed(2);
+    }
+
+    const plantData = {
+      ferns: [
+        { name: 'Boston Fern', price: '$12', img: 'BF.png' },
+        { name: 'Maidenhair Fern', price: '$15', img: 'MF.png' }
+      ],
+      moss: [
+        { name: 'Sheet Moss', price: '$10', img: 'SM.png' },
+        { name: 'Cushion Moss', price: '$8', img: 'CM.png' }
+      ],
+      conifers: [
+        { name: 'Pine', price: '$25', img: 'P.png' },
+        { name: 'Spruce', price: '$30', img: 'S.png' }
+      ],
+      flowering: [
+        { name: 'Poppy', price: '$5', img: 'Pp.png' },
+        { name: 'Bluebell', price: '$6', img: 'B.png' }
+      ]
+    };
+
+    Object.keys(plantData).forEach(type => {
+      const container = document.getElementById(`${type}-products`);
+      plantData[type].forEach(item => {
+        const card = document.createElement('div');
+        card.className = 'card m-2';
+        card.style.width = '18rem';
+        card.innerHTML = `
+            <img src="${item.img}" class="card-img-top" alt="${item.name}">
+            <div class="card-body">
+              <h5 class="card-title">${item.name}</h5>
+              <p class="card-text">Price: ${item.price}</p>
+              <button class="btn btn-primary">Add to Cart</button>
+            </div>
+          `;
+        card.querySelector('button').addEventListener('click', () => addToCart(item));
+        container.appendChild(card);
+      });
+    });
+
+    document.getElementById('checkout-form').addEventListener('submit', function (event) {
+      event.preventDefault();
+      const address = document.getElementById('address').value;
+      const orderDetails = {
+        cart: cart,
+        total: document.getElementById('cart-total').textContent,
+        address: address
+      };
+      localStorage.setItem('orderDetails', JSON.stringify(orderDetails));
+      window.location.href = 'check.html';
+    });
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
